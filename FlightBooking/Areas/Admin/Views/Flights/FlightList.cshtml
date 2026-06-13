@@ -1081,6 +1081,7 @@
                                     @* Actions *@
                                     <td>
                                         <div class="cell-actions">
+
                                             <a asp-area="Admin"
                                                asp-controller="Flights"
                                                asp-action="Detail"
@@ -1097,6 +1098,14 @@
                                                 <i class="bi bi-pencil-fill"></i>
                                                 <span class="act-label">Düzenle</span>
                                             </a>
+
+                                            <a href="/Admin/Booking/CreateBooking/@f.FlightId"
+                                               class="act act-book">
+                                                <i class="bi bi-ticket-perforated-fill"></i>
+                                                <span class="act-label">Rezerve Et</span>
+                                            </a>
+
+
                                             <button class="act act-del"
                                                     onclick="confirmDelete('@f.FlightId', '@f.FlightNumber')">
                                                 <i class="bi bi-trash-fill"></i>
